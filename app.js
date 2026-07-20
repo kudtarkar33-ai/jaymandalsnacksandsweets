@@ -1,6 +1,6 @@
 // ============ Business config ============
 const WHATSAPP_NUMBER = '919769620994';
-const BUSINESS_NAME = 'Jaymangal Sweets and Snacks';
+const BUSINESS_NAME = 'जयमंगल Sweets & Snacks';
 const LANG_KEY = 'jaymangal-lang';
 const SUPPORTED_LANGS = ['en', 'hi', 'mr'];
 
@@ -12,7 +12,8 @@ const I18N = {
     hero_eyebrow: '🪔 Homemade with love, in Mumbai',
     hero_title1: 'Sweets & snacks made the way',
     hero_title2: 'your family remembers',
-    hero_sub: 'Ladoos, chaklis, karanjis, puran poli and more — prepared fresh to order, with 100% organic, pure ingredients. Made to be shared with the people you love.',
+    hero_sub: 'Ladoos, chaklis, karanjis, puran poli and more — prepared fresh to order, with 100% organic, pure ingredients. Every single item is made using only 100% pure desi ghee and cold-pressed sunflower oil. We never use palm oil, vanaspati, or any local refined oils — because your family deserves nothing less. Made to be shared with the people you love.',
+    trust_ghee: 'Pure ghee & sunflower oil — no palm oil',
     hero_cta_menu: 'See full menu & prices',
     trust_organic: '100% Organic ingredients',
     trust_fresh: 'Made fresh to order',
@@ -20,9 +21,9 @@ const I18N = {
     hero_photo_tag: 'Freshly made, this week 🌟',
     about_eyebrow: 'Our Story',
     about_heading: 'A kitchen that started with one dream',
-    about_p1: "Every good sweet starts with someone who refuses to cut corners — and that's exactly where Jaymangal Sweets & Snacks began. Snehal Nar-Shetye has spent years perfecting recipes passed down in her family: the right roast on the besan for a laddu, the patience a puran poli needs before it puffs up just right on the tawa, the exact hand-ground bhajani that makes a chakli snap instead of crumble.",
-    about_p2: "For a long time, this was just for family — the ladoos that disappeared within a day of any festival, the puran poli everyone asked for by name. Jaymangal Sweets & Snacks is that same kitchen, now open to your family too: a small, independent business built on the belief that food made slowly, with pure and organic ingredients, still means something.",
-    about_p3: "Every order is still made in small batches, by hand, the same way it always has been — because that's the only way Snehal knows how to cook.",
+    about_p1: "Every good sweet starts with someone who refuses to cut corners — and that's exactly where जयमंगल Sweets & Snacks began. Sou. Madhuri Maruti Nar has spent years perfecting recipes passed down in her family: the right roast on the besan for a laddu, the patience a puran poli needs before it puffs up just right on the tawa, the exact hand-ground bhajani that makes a chakli snap instead of crumble.",
+    about_p2: "For a long time, this was just for family — the ladoos that disappeared within a day of any festival, the puran poli everyone asked for by name. जयमंगल Sweets & Snacks is that same kitchen, now open to your family too. One thing has never changed: every item is made exclusively with 100% pure desi ghee and sunflower oil. No palm oil. No vanaspati. No shortcuts — because the taste of real ghee is something no substitute can replicate.",
+    about_p3: "Every order is still made in small batches, by hand, the same way it always has been — because that's the only way Sou. Madhuri Maruti Nar knows how to cook.",
     menu_eyebrow: 'Menu & Prices',
     menu_heading: "What's cooking today",
     menu_sub: 'Tap "Order this" on anything below to send a WhatsApp message with the item already filled in — just confirm quantity and delivery date.',
@@ -61,7 +62,7 @@ const I18N = {
     label_date: 'Preferred delivery date', label_message: 'Anything else?',
     message_placeholder: 'Delivery address, occasion, special requests…',
     submit_btn: 'Send enquiry via WhatsApp',
-    footer_tagline: '100% organic, pure ingredients — made with love, delivered to your loved ones.',
+    footer_tagline: 'Made with 100% pure desi ghee & sunflower oil — no palm oil, no shortcuts. Just honest, homemade goodness, delivered with love.',
     footer_delivering: 'Delivering across Mumbai',
     footer_bottom_made: 'Made with 🧡 for family recipes',
     toast_enquiry_opening: 'Opening WhatsApp with your enquiry…',
@@ -76,7 +77,8 @@ const I18N = {
     hero_eyebrow: '🪔 मुंबई में प्यार से बना घर का खाना',
     hero_title1: 'मिठाई और नाश्ता, बिल्कुल वैसे ही',
     hero_title2: 'जैसे आपका परिवार याद रखता है',
-    hero_sub: 'लड्डू, चकली, करंजी, पुरनपोली और भी बहुत कुछ — 100% ऑर्गेनिक और शुद्ध सामग्री से, ऑर्डर पर ताज़ा बनाया जाता है। उन लोगों के साथ बांटने के लिए, जिन्हें आप प्यार करते हैं।',
+    hero_sub: 'लड्डू, चकली, करंजी, पुरनपोली और भी बहुत कुछ — 100% ऑर्गेनिक सामग्री से, ऑर्डर पर ताज़ा बनाया जाता है। हर हर सामग्री केवल 100% शुद्ध देसी घी और सूरजमुखी तेल से बनती है — पाम ऑयल, वनस्पति या कोई भी रिफाइंड तेल नहीं। आपके परिवार को सिर्फ सर्वश्रेष्ठ ही मिलना चाहिए।',
+    trust_ghee: 'शुद्ध घी और सूरजमुखी तेल — पाम ऑयल नहीं',
     hero_cta_menu: 'पूरा मेन्यू और कीमतें देखें',
     trust_organic: '100% ऑर्गेनिक सामग्री',
     trust_fresh: 'ऑर्डर पर ताज़ा बनाया जाता है',
@@ -84,9 +86,9 @@ const I18N = {
     hero_photo_tag: 'इस हफ्ते की ताज़ी बनी 🌟',
     about_eyebrow: 'हमारी कहानी',
     about_heading: 'एक रसोई, जिसकी शुरुआत एक सपने से हुई',
-    about_p1: 'हर अच्छी मिठाई की शुरुआत उस इंसान से होती है जो कभी शॉर्टकट नहीं अपनाता — और जयमंगल स्वीट्स एंड स्नैक्स की शुरुआत भी ठीक इसी तरह हुई। स्नेहल नार-शेट्ये ने वर्षों तक अपने परिवार से मिली रेसिपीज़ को संजोया है — लड्डू के लिए बेसन को सही तरीके से भूनना, पुरनपोली को तवे पर फूलने से पहले जितना धैर्य चाहिए उतना रखना, और चकली को टूटने की बजाय कुरकुरी बनाने वाली हाथ से पिसी भाजणी।',
-    about_p2: 'लंबे समय तक यह सिर्फ परिवार के लिए ही था — वो लड्डू जो किसी भी त्योहार पर एक दिन में खत्म हो जाते थे, और वो पुरनपोली जिसे हर कोई नाम लेकर मांगता था। जयमंगल स्वीट्स एंड स्नैक्स वही रसोई है, जो अब आपके परिवार के लिए भी खुली है — एक छोटा, स्वतंत्र व्यवसाय, इस विश्वास पर बना कि शुद्ध और ऑर्गेनिक सामग्री से, समय लगाकर बनाया गया खाना आज भी मायने रखता है।',
-    about_p3: 'आज भी हर ऑर्डर छोटी मात्रा में, हाथ से और उसी तरीके से बनाई जाती है — क्योंकि स्नेहल को खाना बनाने का बस यही एक तरीका आता है।',
+    about_p1: 'हर अच्छी मिठाई की शुरुआत उस इंसान से होती है जो कभी शॉर्टकट नहीं अपनाता — और जयमंगल Sweets & Snacks की शुरुआत भी ठीक इसी तरह हुई। सौ. माधुरी मारुती नर ने वर्षों तक अपने परिवार से मिली रेसिपीज़ को संजोया है — लड्डू के लिए बेसन को सही तरीके से भूनना, पुरनपोली को तवे पर फूलने से पहले जितना धैर्य चाहिए उतना रखना, और चकली को कुरकुरा बनाने वाली हाथ से पिसी भाजणी।',
+    about_p2: 'लंबे समय तक यह सिर्फ परिवार के लिए ही था — वो लड्डू जो त्योहार में एक दिन में खत्म हो जाते, और वो पुरनपोली जिसे हर कोई नाम लेकर मांगता था। अब यह रसोई आपके घर के लिए भी खुली है। एक बात आज भी नहीं बदली — हर चीज़ केवल 100% शुद्ध देसी घी और सूरजमुखी तेल से बनती है। ना पाम ऑयल, ना वनस्पति, ना कोई स्थानीय रिफाइंड तेल — क्योंकि शुद्ध घी की खुशबू कोई नकल नहीं दे सकता।',
+    about_p3: 'आज भी हर ऑर्डर छोटी मात्रा में, हाथ से और उसी तरीके से बनाई जाती है — क्योंकि सौ. माधुरी मारुती नर को खाना बनाने का बस यही एक तरीका आता है।',
     menu_eyebrow: 'मेन्यू और कीमतें',
     menu_heading: 'आज क्या बन रहा है',
     menu_sub: 'नीचे किसी भी चीज़ पर "यह ऑर्डर करें" दबाएं और व्हाट्सएप पर वह आइटम पहले से भरा हुआ संदेश भेजें — बस मात्रा और डिलीवरी की तारीख बताएं।',
@@ -125,7 +127,7 @@ const I18N = {
     label_date: 'पसंदीदा डिलीवरी तारीख', label_message: 'कुछ और बताना है?',
     message_placeholder: 'डिलीवरी पता, अवसर, खास मांग…',
     submit_btn: 'व्हाट्सएप के ज़रिए पूछताछ भेजें',
-    footer_tagline: '100% ऑर्गेनिक, शुद्ध सामग्री — प्यार से बनाया गया, आपके प्रियजनों तक पहुंचाया गया।',
+    footer_tagline: 'शुद्ध देसी घी और सूरजमुखी तेल से बनाया गया — ना पाम ऑयल, ना वनस्पति। सिर्फ सच्चा, घरेलू स्वाद, प्यार से बनाया राखा।',
     footer_delivering: 'पूरे मुंबई में डिलीवरी',
     footer_bottom_made: 'पारिवारिक व्यंजनों के लिए 🧡 से बनाया गया',
     toast_enquiry_opening: 'आपकी पूछताछ के साथ व्हाट्सएप खोला जा रहा है…',
@@ -140,7 +142,8 @@ const I18N = {
     hero_eyebrow: '🪔 मुंबईत प्रेमाने बनवलेलं घरगुती खाणं',
     hero_title1: 'गोडधोड आणि खाऊ, अगदी तसाच',
     hero_title2: 'जसा तुमच्या घरचा आठवतो',
-    hero_sub: 'लाडू, चकली, करंजी, पुरणपोळी आणि बरंच काही — १००% सेंद्रिय आणि शुद्ध पदार्थांपासून, ऑर्डरप्रमाणे ताजं बनवलं जातं. तुमच्या प्रिय माणसांसोबत वाटण्यासाठी.',
+    hero_sub: 'लाडू, चकली, करंजी, पुरणपोळी आणि बरंच काही — १००% सेंद्रिय आणि शुद्ध पदार्थांपासून, ऑर्डरप्रमाणे ताजं बनवलं जातं. प्रत्येक पदार्थ फक्त १००% शुद्ध तूप आणि सूर्यफूल तेलात बनवला जातो — पाम ऑईल, वनस्पती किंवा कोणतेही स्थानिक तेल वापरले जात नाही। तुमच्या प्रिय माणसांसोबत वाटण्यासाठी.',
+    trust_ghee: 'शुद्ध तूप आणि सूर्यफूल तेल — पाम ऑईल नाही',
     hero_cta_menu: 'संपूर्ण मेनू आणि किंमती पहा',
     trust_organic: '१००% सेंद्रिय पदार्थ',
     trust_fresh: 'ऑर्डरप्रमाणे ताजं बनवलं जातं',
@@ -148,9 +151,9 @@ const I18N = {
     hero_photo_tag: 'याच आठवड्यातील ताजं 🌟',
     about_eyebrow: 'आमची गोष्ट',
     about_heading: 'एका स्वप्नापासून सुरू झालेलं स्वयंपाकघर',
-    about_p1: 'प्रत्येक चांगल्या गोडाची सुरुवात अशा व्यक्तीपासून होते जी कधीच तडजोड करत नाही — आणि जयमंगल स्वीट्स अँड स्नॅक्सची सुरुवात नेमकी अशीच झाली. स्नेहल नार-शेट्ये यांनी आपल्या घरातून आलेल्या पाककृती वर्षानुवर्षे जपल्या आहेत — लाडवासाठी बेसन नेमकं किती भाजायचं, पुरणपोळी तव्यावर फुगण्याआधी किती धीर धरायचा, आणि चकली तुटण्याऐवजी कडकडीत होण्यासाठी हाताने दळलेली भाजणी नेमकी कशी हवी.',
-    about_p2: 'बऱ्याच काळापर्यंत हे फक्त घरच्यांसाठीच होतं — सणासुदीला एका दिवसात संपणारे लाडू, आणि सगळे आवर्जून नावाने मागायचे ती पुरणपोळी. जयमंगल स्वीट्स अँड स्नॅक्स म्हणजे तेच स्वयंपाकघर, आता तुमच्या कुटुंबासाठीही खुलं झालेलं — शुद्ध आणि सेंद्रिय पदार्थांपासून, वेळ घेऊन बनवलेल्या अन्नाला अजूनही अर्थ आहे या विश्वासावर उभा असलेला एक छोटा, स्वतंत्र व्यवसाय.',
-    about_p3: 'आजही प्रत्येक ऑर्डर लहान प्रमाणात, हाताने आणि तशाच पद्धतीने बनवली जाते — कारण स्नेहल यांना स्वयंपाक करायचा हाच एकमेव मार्ग माहीत आहे.',
+    about_p1: 'प्रत्येक चांगल्या गोडाची सुरुवात अशा व्यक्तीपासून होते जी कधीच तडजोड करत नाही — आणि जयमंगल Sweets & Snacks ची सुरुवात नेमकी अशीच झाली. सौ. माधुरी मारुती नर यांनी आपल्या घरातून आलेल्या पाककृती वर्षानुवर्षे जपल्या आहेत — लाडवासाठी बेसन नेमकं किती भाजायचं, पुरणपोळी तव्यावर फुगण्याआधी किती धीर धरायचा, आणि चकली तुटण्याऐवजी कडकडीत होण्यासाठी हाताने दळलेली भाजणी नेमकी कशी हवी.',
+    about_p2: 'बऱ्याच काळापर्यंत हे फक्त घरच्यांसाठीच होतं — सणासुदीला एका दिवसात संपणारे लाडू, आणि सगळे आवर्जून नावाने मागायचे ती पुरणपोळी. आता हे स्वयंपाकघर तुमच्यासाठीही खुलं आहे. एक गोष्ट मात्र कधीच बदलली नाही — प्रत्येक पदार्थ फक्त १००% शुद्ध तूप आणि सूर्यफूल तेलात बनवला जातो. पाम ऑईल नाही, वनस्पती नाही, कोणतेही स्थानिक तेल नाही — कारण शुद्ध तूपाची सुगंध कोणतीही भेसळ देऊ शकत नाही.',
+    about_p3: 'आजही प्रत्येक ऑर्डर लहान प्रमाणात, हाताने आणि तशाच पद्धतीने बनवली जाते — कारण सौ. माधुरी मारुती नर यांना स्वयंपाक करायचा हाच एकमेव मार्ग माहीत आहे.',
     menu_eyebrow: 'मेनू आणि किंमती',
     menu_heading: 'आज काय बनतंय',
     menu_sub: 'खालील कोणत्याही पदार्थावर "हे ऑर्डर करा" दाबा आणि तो पदार्थ आधीच भरलेला व्हॉट्सअॅप मेसेज पाठवा — फक्त प्रमाण आणि डिलिव्हरीची तारीख सांगा.',
@@ -189,7 +192,7 @@ const I18N = {
     label_date: 'हवी असलेली डिलिव्हरी तारीख', label_message: 'आणखी काही सांगायचंय?',
     message_placeholder: 'डिलिव्हरी पत्ता, प्रसंग, खास मागणी…',
     submit_btn: 'व्हॉट्सअॅपद्वारे चौकशी पाठवा',
-    footer_tagline: '१००% सेंद्रिय, शुद्ध पदार्थ — प्रेमाने बनवलेलं, तुमच्या प्रियजनांपर्यंत पोहोचवलेलं.',
+    footer_tagline: 'शुद्ध तूप आणि सूर्यफूल तेलात बनवलेलं — पाम ऑईल नाही, वनस्पती नाही. फक्त खरं, घरगुती मनाचे, प्रेमाने तुमच्यापर्यंत पोहोचवलेलं.',
     footer_delivering: 'संपूर्ण मुंबईत डिलिव्हरी',
     footer_bottom_made: 'कौटुंबिक पाककृतींसाठी 🧡 ने बनवलेलं',
     toast_enquiry_opening: 'तुमच्या चौकशीसह व्हॉट्सअॅप उघडत आहे…',
@@ -508,7 +511,7 @@ function detectInitialLang() {
     const saved = localStorage.getItem(LANG_KEY);
     if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
   } catch (e) { /* ignore */ }
-  return 'en';
+  return 'mr';
 }
 
 currentLang = detectInitialLang();

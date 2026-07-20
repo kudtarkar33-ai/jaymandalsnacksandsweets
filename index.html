@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlRoot">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n-title="page-title">Jaymangal Sweets and Snacks — Homemade, 100% Organic</title>
+<title>Jaymangal Sweets and Snacks — Homemade, 100% Organic</title>
 <meta name="description" content="Homemade ladoos, chaklis, karanjis, puran poli and traditional Maharashtrian snacks — made with 100% organic, pure ingredients. Order online or on WhatsApp, delivered anywhere in Mumbai.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Poppins:wght@400;500;600;700&family=Kalam:wght@400;700&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Poppins:wght@400;500;600;700&family=Kalam:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-.lang-switcher{display:flex;align-items:center;gap:2px;margin-right:10px;background:rgba(255,255,255,0.6);border:1.5px solid rgba(0,0,0,0.10);border-radius:9px;padding:3px 4px;backdrop-filter:blur(6px)}
-.lang-btn{background:none;border:none;border-radius:6px;padding:4px 9px;font-size:12.5px;font-weight:600;cursor:pointer;color:#6b4c35;transition:background 0.18s,color 0.18s;line-height:1.3;font-family:'Hind','Poppins',sans-serif;white-space:nowrap}
-.lang-btn:hover{background:rgba(232,76,11,0.08);color:#e84c0b}
-.lang-btn.active{background:#e84c0b;color:#fff}
-.lang-sep{color:#d0c0b0;font-size:11px;user-select:none}
-body.lang-hi,body.lang-mr{font-family:'Hind','Poppins',sans-serif}
-body.lang-hi .brand-name,body.lang-mr .brand-name{font-family:'Yatra One','Hind',sans-serif}
-@media(max-width:768px){.lang-switcher{margin-right:6px}.lang-btn{padding:3px 7px;font-size:11.5px}}
-</style>
 </head>
 <body>
+
+<!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
     <a href="#top" class="brand">
@@ -27,179 +19,245 @@ body.lang-hi .brand-name,body.lang-mr .brand-name{font-family:'Yatra One','Hind'
       <span class="brand-name">Jaymangal <span class="accent">Sweets &amp; Snacks</span></span>
     </a>
     <nav class="main-nav">
-      <a href="#about" data-i18n="nav-about">Our Story</a>
-      <a href="#menu" data-i18n="nav-menu">Menu</a>
-      <a href="#gallery" data-i18n="nav-gallery">Gallery</a>
-      <a href="#reviews" data-i18n="nav-reviews">Reviews</a>
-      <a href="#order" data-i18n="nav-order">Order</a>
+      <a href="#about" data-i18n="nav_about">Our Story</a>
+      <a href="#menu" data-i18n="nav_menu">Menu</a>
+      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+      <a href="#order" data-i18n="nav_order">Order</a>
     </nav>
-    <div class="lang-switcher" id="langSwitcher" aria-label="Language selector">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span class="lang-sep">|</span>
-      <button class="lang-btn" data-lang="hi">हिंदी</button>
-      <span class="lang-sep">|</span>
-      <button class="lang-btn" data-lang="mr">मराठी</button>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+      <button data-lang="en" class="lang-btn">EN</button>
+      <button data-lang="hi" class="lang-btn">हिं</button>
+      <button data-lang="mr" class="lang-btn">मर</button>
     </div>
     <a class="btn btn-whatsapp header-cta" id="headerWhatsapp" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.31-.18-3.02.79.8-2.94-.2-.32A7.94 7.94 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.36-5.6c-.24-.12-1.4-.7-1.62-.77-.22-.08-.37-.12-.53.12-.16.24-.6.77-.74.93-.14.16-.27.18-.5.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.31-1.64-.14-.24-.02-.37.1-.5.1-.1.24-.27.36-.4.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.73-1.76-.2-.46-.4-.4-.53-.4h-.46c-.16 0-.42.06-.64.3s-.85.83-.85 2.02.87 2.35 1 2.5c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.5.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.13.2-.55.2-1.02.14-1.13-.06-.1-.22-.16-.46-.28z"/></svg>
-      <span data-i18n="header-cta">Order on WhatsApp</span>
+      <span data-i18n="nav_cta">Order on WhatsApp</span>
     </a>
     <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
   </div>
   <nav class="mobile-nav" id="mobileNav">
-    <a href="#about" data-i18n="nav-about">Our Story</a>
-    <a href="#menu" data-i18n="nav-menu">Menu</a>
-    <a href="#gallery" data-i18n="nav-gallery">Gallery</a>
-    <a href="#reviews" data-i18n="nav-reviews">Reviews</a>
-    <a href="#order" data-i18n="nav-order">Order</a>
+    <a href="#about" data-i18n="nav_about">Our Story</a>
+    <a href="#menu" data-i18n="nav_menu">Menu</a>
+    <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+    <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+    <a href="#order" data-i18n="nav_order">Order</a>
+    <div class="lang-switch lang-switch-mobile" id="langSwitchMobile" role="group" aria-label="Language">
+      <button data-lang="en" class="lang-btn">EN</button>
+      <button data-lang="hi" class="lang-btn">हिं</button>
+      <button data-lang="mr" class="lang-btn">मर</button>
+    </div>
   </nav>
 </header>
+
+<!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="marigold-strip" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow" data-i18n="hero-eyebrow">🪔 Homemade with love, in Mumbai</p>
-      <h1 data-i18n-html="hero-h1">Sweets &amp; snacks made the way<br><span class="accent-underline">your family remembers</span></h1>
-      <p class="hero-sub" data-i18n="hero-sub">Ladoos, chaklis, karanjis, puran poli and more — prepared fresh to order, with 100% organic, pure ingredients. Made to be shared with the people you love.</p>
+      <p class="eyebrow" data-i18n="hero_eyebrow">🪔 Homemade with love, in Mumbai</p>
+      <h1><span data-i18n="hero_title1">Sweets &amp; snacks made the way</span><br><span class="accent-underline" data-i18n="hero_title2">your family remembers</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">Ladoos, chaklis, karanjis, puran poli and more — prepared fresh to order, with 100% organic, pure ingredients. Made to be shared with the people you love.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" id="heroWhatsapp" target="_blank" rel="noopener" data-i18n="btn-order-wa">Order on WhatsApp</a>
-        <a class="btn btn-ghost" href="#menu" data-i18n-html="btn-see-menu">See full menu &amp; prices</a>
+        <a class="btn btn-primary" id="heroWhatsapp" target="_blank" rel="noopener" data-i18n="nav_cta">Order on WhatsApp</a>
+        <a class="btn btn-ghost" href="#menu" data-i18n="hero_cta_menu">See full menu &amp; prices</a>
       </div>
       <div class="trust-row">
-        <div class="trust-item"><span class="trust-icon">🌿</span><span data-i18n="trust-organic">100% Organic ingredients</span></div>
-        <div class="trust-item"><span class="trust-icon">👐</span><span data-i18n="trust-fresh">Made fresh to order</span></div>
-        <div class="trust-item"><span class="trust-icon">🚚</span><span data-i18n="trust-delivery">Delivered across Mumbai</span></div>
+        <div class="trust-item"><span class="trust-icon">🌿</span><span data-i18n="trust_organic">100% Organic ingredients</span></div>
+        <div class="trust-item"><span class="trust-icon">👐</span><span data-i18n="trust_fresh">Made fresh to order</span></div>
+        <div class="trust-item"><span class="trust-icon">🚚</span><span data-i18n="trust_delivery">Delivered across Mumbai</span></div>
       </div>
     </div>
     <div class="hero-photo">
-      <img src="images/laddus.jpg" alt="Freshly made methi ladoos, packed and ready" loading="lazy">
-      <span class="photo-tag" data-i18n="photo-tag">Freshly made, this week 🌟</span>
+      <img src="images/hero-laddu.jpg" alt="Freshly made ladoos, neatly arranged and ready" loading="lazy">
+      <span class="photo-tag" data-i18n="hero_photo_tag">Freshly made, this week 🌟</span>
     </div>
   </div>
 </section>
+
 <div class="rangoli-divider" aria-hidden="true"></div>
+
+<!-- ============ ABOUT / STORY ============ -->
 <section id="about" class="section about-section">
   <div class="wrap about-inner">
-    <div class="about-photo"><div class="photo-frame"><img src="images/puranpoli.jpg" alt="Homemade puran poli, made fresh" loading="lazy"></div></div>
-    <div class="about-copy">
-      <p class="eyebrow" data-i18n="about-eyebrow">Our Story</p>
-      <h2 data-i18n="about-h2">A kitchen that started with one dream</h2>
-      <div class="story-text" id="storyText">
-        <p data-i18n="story-p1">Every good sweet starts with someone who refuses to cut corners — and that's exactly where Jaymangal Sweets &amp; Snacks began. Snehal Nar-Shetye has spent years perfecting recipes passed down in her family: the right roast on the besan for a laddu, the patience a puran poli needs before it puffs up just right on the tawa, the exact hand-ground bhajani that makes a chakli snap instead of crumble.</p>
-        <p data-i18n="story-p2">For a long time, this was just for family — the ladoos that disappeared within a day of any festival, the puran poli everyone asked for by name. Jaymangal Sweets &amp; Snacks is that same kitchen, now open to your family too.</p>
-        <p data-i18n="story-p3">Every order is still made in small batches, by hand, the same way it always has been — because that's the only way Snehal knows how to cook.</p>
+    <div class="about-photo">
+      <div class="photo-frame">
+        <img src="images/puranpoli.jpg" alt="Homemade puran poli, made fresh" loading="lazy">
       </div>
-      <p class="story-note" data-i18n="story-note">✏️ This is a starting draft of your mother's story — happy to rewrite it once you share a few real details.</p>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow" data-i18n="about_eyebrow">Our Story</p>
+      <h2 data-i18n="about_heading">A kitchen that started with one dream</h2>
+      <div class="story-text" id="storyText">
+        <p data-i18n="about_p1">Every good sweet starts with someone who refuses to cut corners — and that's exactly where Jaymangal Sweets &amp; Snacks began. Snehal Nar-Shetye has spent years perfecting recipes passed down in her family: the right roast on the besan for a laddu, the patience a puran poli needs before it puffs up just right on the tawa, the exact hand-ground bhajani that makes a chakli snap instead of crumble.</p>
+        <p data-i18n="about_p2">For a long time, this was just for family — the ladoos that disappeared within a day of any festival, the puran poli everyone asked for by name. Jaymangal Sweets &amp; Snacks is that same kitchen, now open to your family too: a small, independent business built on the belief that food made slowly, with pure and organic ingredients, still means something.</p>
+        <p data-i18n="about_p3">Every order is still made in small batches, by hand, the same way it always has been — because that's the only way Snehal knows how to cook.</p>
+      </div>
+      <p class="story-note">✏️ This is a starting draft of your mother's story — happy to rewrite it once you share a few real details (how she learned to cook, how long she's been making these recipes, what inspired her to start the business).</p>
     </div>
   </div>
 </section>
+
 <div class="rangoli-divider" aria-hidden="true"></div>
+
+<!-- ============ MENU ============ -->
 <section id="menu" class="section menu-section">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow" data-i18n-html="menu-eyebrow">Menu &amp; Prices</p>
-      <h2 data-i18n="menu-h2">What's cooking today</h2>
-      <p class="section-sub" data-i18n="menu-sub">Tap "Order this" on anything below to send a WhatsApp message with the item already filled in — just confirm quantity and delivery date.</p>
+      <p class="eyebrow" data-i18n="menu_eyebrow">Menu &amp; Prices</p>
+      <h2 data-i18n="menu_heading">What's cooking today</h2>
+      <p class="section-sub" data-i18n="menu_sub">Tap "Order this" on anything below to send a WhatsApp message with the item already filled in — just confirm quantity and delivery date.</p>
     </div>
+
     <div class="menu-tabs" id="menuTabs"></div>
     <div class="menu-grid" id="menuGrid"></div>
+
     <div class="seasonal-note">
       <span class="seasonal-icon">🎉</span>
       <div>
-        <strong data-i18n-html="seasonal-title">Festive &amp; seasonal specials</strong>
-        <p data-i18n="seasonal-desc">Karanjis and other festival items (Diwali, Ganesh Chaturthi, and more) are available seasonally — message us on WhatsApp for current availability and pricing.</p>
+        <strong data-i18n="menu_seasonal_title">Festive &amp; seasonal specials</strong>
+        <p data-i18n="menu_seasonal_body">Karanjis and other festival items (Diwali, Ganesh Chaturthi, and more) are available seasonally — message us on WhatsApp for current availability and pricing.</p>
       </div>
     </div>
   </div>
 </section>
+
 <div class="rangoli-divider" aria-hidden="true"></div>
+
+<!-- ============ GALLERY ============ -->
 <section id="gallery" class="section gallery-section">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow" data-i18n="gallery-eyebrow">Gallery</p>
-      <h2 data-i18n="gallery-h2">Straight from the kitchen</h2>
+      <p class="eyebrow" data-i18n="gallery_eyebrow">Gallery</p>
+      <h2 data-i18n="gallery_heading">Straight from the kitchen</h2>
     </div>
     <div class="gallery-grid">
-      <figure class="gallery-item"><img src="images/laddus.jpg" alt="Freshly made ladoos" loading="lazy"><figcaption data-i18n="gallery-cap1">Fresh batch, packed and ready</figcaption></figure>
-      <figure class="gallery-item"><img src="images/puranpoli.jpg" alt="Homemade puran poli" loading="lazy"><figcaption data-i18n="gallery-cap2">Puran poli, straight off the tawa</figcaption></figure>
-      <figure class="gallery-item"><img src="images/folded-item.jpg" alt="Homemade snack" loading="lazy"><figcaption data-i18n="gallery-cap3">Made fresh, in small batches</figcaption></figure>
+      <figure class="gallery-item">
+        <img src="images/hero-laddu.jpg" alt="Freshly made ladoos, neatly arranged" loading="lazy">
+        <figcaption data-i18n="gallery_caption1">Fresh batch, packed and ready</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/chivda-bowl.jpg" alt="Homemade poha chivda in a mixing bowl" loading="lazy">
+        <figcaption data-i18n="gallery_caption_chivda">Poha chivda, fresh off the stove</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/chakli.jpg" alt="Crispy homemade chakli" loading="lazy">
+        <figcaption data-i18n="gallery_caption_chakli">Crispy, hand-pressed chakli</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/modak.jpg" alt="Steamed modak on a plate" loading="lazy">
+        <figcaption data-i18n="gallery_caption_modak">Steamed modak, festival-ready</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/puranpoli.jpg" alt="Homemade puran poli straight off the tawa" loading="lazy">
+        <figcaption data-i18n="gallery_caption2">Puran poli, straight off the tawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/ghavane.jpg" alt="Homemade ghavane, lacy rice crepes" loading="lazy">
+        <figcaption data-i18n="gallery_caption_ghavane">Ghavane, made from our flour mix</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/besan-laddu.jpg" alt="Besan laddu, freshly rolled" loading="lazy">
+        <figcaption data-i18n="gallery_caption_besan">Besan laddu, freshly rolled</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/flour-packaging.jpg" alt="Flour mixes, labeled and dated" loading="lazy">
+        <figcaption data-i18n="gallery_caption_packaging">Labeled and dated, every batch</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="images/packed-ready.jpg" alt="Orders packed and ready for delivery" loading="lazy">
+        <figcaption data-i18n="gallery_caption3">Made fresh, in small batches</figcaption>
+      </figure>
     </div>
   </div>
 </section>
+
 <div class="rangoli-divider" aria-hidden="true"></div>
+
+<!-- ============ REVIEWS ============ -->
 <section id="reviews" class="section reviews-section">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow" data-i18n="reviews-eyebrow">From Our Customers</p>
-      <h2 data-i18n="reviews-h2">What families are saying</h2>
+      <p class="eyebrow" data-i18n="reviews_eyebrow">From Our Customers</p>
+      <h2 data-i18n="reviews_heading">What families are saying</h2>
     </div>
     <div class="reviews-grid" id="reviewsGrid"></div>
   </div>
 </section>
+
 <div class="rangoli-divider" aria-hidden="true"></div>
+
+<!-- ============ ORDER ============ -->
 <section id="order" class="section order-section">
   <div class="wrap order-inner">
     <div class="order-info">
-      <p class="eyebrow" data-i18n="order-eyebrow">How to Order</p>
-      <h2 data-i18n="order-h2">Order for your family, or as a gift</h2>
+      <p class="eyebrow" data-i18n="order_eyebrow">How to Order</p>
+      <h2 data-i18n="order_heading">Order for your family, or as a gift</h2>
       <ol class="steps">
-        <li><span class="step-num">1</span><span data-i18n="step1">Browse the menu and pick your items</span></li>
-        <li><span class="step-num">2</span><span data-i18n="step2">Message us on WhatsApp or fill in the form — let us know quantity and date</span></li>
-        <li><span class="step-num">3</span><span data-i18n="step3">Please order at least 2–3 days in advance so everything is made fresh</span></li>
-        <li><span class="step-num">4</span><span data-i18n="step4">We prepare your order by hand and deliver anywhere in Mumbai</span></li>
+        <li><span class="step-num">1</span><span data-i18n="order_step1">Browse the menu and pick your items</span></li>
+        <li><span class="step-num">2</span><span data-i18n="order_step2">Message us on WhatsApp or fill in the form — let us know quantity and date</span></li>
+        <li><span class="step-num">3</span><span data-i18n="order_step3">Please order at least 2–3 days in advance so everything is made fresh</span></li>
+        <li><span class="step-num">4</span><span data-i18n="order_step4">We prepare your order by hand and deliver anywhere in Mumbai</span></li>
       </ol>
-      <div class="delivery-note"><span data-i18n-html="delivery-note"><strong>📍 Delivery:</strong> Anywhere in Mumbai · <strong>🗓️ Lead time:</strong> 2–3 days advance notice · <strong>✅</strong> Daily and festive/seasonal orders both welcome</span></div>
+      <div class="delivery-note" data-i18n="order_delivery_note">📍 <strong>Delivery:</strong> Anywhere in Mumbai · 🗓️ <strong>Lead time:</strong> 2–3 days advance notice · ✅ Daily and festive/seasonal orders both welcome</div>
       <a class="btn btn-whatsapp" id="orderWhatsapp" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.31-.18-3.02.79.8-2.94-.2-.32A7.94 7.94 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.36-5.6c-.24-.12-1.4-.7-1.62-.77-.22-.08-.37-.12-.53.12-.16.24-.6.77-.74.93-.14.16-.27.18-.5.06-.24-.12-1-.37-1.9-1.17-.7-.63-1.18-1.4-1.31-1.64-.14-.24-.02-.37.1-.5.1-.1.24-.27.36-.4.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.53-1.28-.73-1.76-.2-.46-.4-.4-.53-.4h-.46c-.16 0-.42.06-.64.3s-.85.83-.85 2.02.87 2.35 1 2.5c.12.16 1.7 2.6 4.14 3.64.58.25 1.03.4 1.38.5.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.13.2-.55.2-1.02.14-1.13-.06-.1-.22-.16-.46-.28z"/></svg>
-        <span data-i18n="order-wa-btn">Message us directly</span>
+        <span data-i18n="order_cta_message">Message us directly</span>
       </a>
     </div>
+
     <div class="order-form-card">
-      <h3 data-i18n="form-title">Or send an enquiry</h3>
-      <p class="form-note" data-i18n="form-note">This opens WhatsApp with your details filled in, so your message reaches us right away.</p>
+      <h3 data-i18n="order_form_heading">Or send an enquiry</h3>
+      <p class="form-note" data-i18n="order_form_note">This opens WhatsApp with your details filled in, so your message reaches us right away.</p>
       <form id="enquiryForm">
-        <div class="field"><label for="eName" data-i18n="form-name">Your name</label><input type="text" id="eName" required></div>
-        <div class="field"><label for="ePhone" data-i18n="form-phone">Phone number</label><input type="tel" id="ePhone" required></div>
-        <div class="field"><label for="eItems" data-i18n="form-items">Item(s) you'd like</label><input type="text" id="eItems" data-i18n-placeholder="form-items-ph"></div>
-        <div class="field"><label for="eDate" data-i18n="form-date">Preferred delivery date</label><input type="date" id="eDate"></div>
-        <div class="field"><label for="eMessage" data-i18n="form-message">Anything else?</label><textarea id="eMessage" rows="3" data-i18n-placeholder="form-message-ph"></textarea></div>
-        <button type="submit" class="btn btn-primary full-width" data-i18n="form-submit">Send enquiry via WhatsApp</button>
+        <div class="field">
+          <label for="eName" data-i18n="label_name">Your name</label>
+          <input type="text" id="eName" required>
+        </div>
+        <div class="field">
+          <label for="ePhone" data-i18n="label_phone">Phone number</label>
+          <input type="tel" id="ePhone" required>
+        </div>
+        <div class="field">
+          <label for="eItems" data-i18n="label_items">Item(s) you'd like</label>
+          <input type="text" id="eItems" data-i18n-placeholder="items_placeholder" placeholder="e.g. 1kg Besan Laddu, 10 Puranpoli">
+        </div>
+        <div class="field">
+          <label for="eDate" data-i18n="label_date">Preferred delivery date</label>
+          <input type="date" id="eDate">
+        </div>
+        <div class="field">
+          <label for="eMessage" data-i18n="label_message">Anything else?</label>
+          <textarea id="eMessage" rows="3" data-i18n-placeholder="message_placeholder" placeholder="Delivery address, occasion, special requests…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width" data-i18n="submit_btn">Send enquiry via WhatsApp</button>
       </form>
     </div>
   </div>
 </section>
+
+<!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <span class="brand-shri">॥ श्री ॥</span>
       <p class="footer-name">Jaymangal Sweets &amp; Snacks</p>
-      <p class="footer-tagline" data-i18n="footer-tagline">100% organic, pure ingredients — made with love, delivered to your loved ones.</p>
+      <p class="footer-tagline" data-i18n="footer_tagline">100% organic, pure ingredients — made with love, delivered to your loved ones.</p>
     </div>
     <div class="footer-contact">
       <p><strong>Ms. Snehal Nar-Shetye</strong></p>
       <p id="footerPhone"></p>
-      <p data-i18n="footer-delivering">Delivering across Mumbai</p>
+      <p data-i18n="footer_delivering">Delivering across Mumbai</p>
     </div>
   </div>
   <div class="footer-bottom wrap">
-    <span data-i18n-html="footer-copy">© 2026 Jaymangal Sweets &amp; Snacks</span>
-    <span data-i18n="footer-love">Made with 🧡 for family recipes</span>
+    <span>© 2026 Jaymangal Sweets &amp; Snacks</span>
+    <span data-i18n="footer_bottom_made">Made with 🧡 for family recipes</span>
   </div>
 </footer>
+
 <div class="toast" id="toast"></div>
+
 <script src="app.js"></script>
-<script>
-(function(){
-const T={
-en:{'page-title':'Jaymangal Sweets and Snacks — Homemade, 100% Organic','nav-about':'Our Story','nav-menu':'Menu','nav-gallery':'Gallery','nav-reviews':'Reviews','nav-order':'Order','header-cta':'Order on WhatsApp','hero-eyebrow':'🪔 Homemade with love, in Mumbai','hero-h1':'Sweets &amp; snacks made the way<br><span class="accent-underline">your family remembers</span>','hero-sub':'Ladoos, chaklis, karanjis, puran poli and more — prepared fresh to order, with 100% organic, pure ingredients. Made to be shared with the people you love.','trust-organic':'100% Organic ingredients','trust-fresh':'Made fresh to order','trust-delivery':'Delivered across Mumbai','btn-order-wa':'Order on WhatsApp','btn-see-menu':'See full menu &amp; prices','photo-tag':'Freshly made, this week 🌟','about-eyebrow':'Our Story','about-h2':'A kitchen that started with one dream','story-p1':"Every good sweet starts with someone who refuses to cut corners — and that's exactly where Jaymangal Sweets & Snacks began.",'story-p2':'For a long time, this was just for family — the ladoos that disappeared within a day of any festival, the puran poli everyone asked for by name.','story-p3':"Every order is still made in small batches, by hand, the same way it always has been — because that's the only way Snehal knows how to cook.",'story-note':"✏️ This is a starting draft of your mother's story — happy to rewrite it once you share a few real details.",'menu-eyebrow':'Menu &amp; Prices','menu-h2':"What's cooking today",'menu-sub':'Tap "Order this" on anything below to send a WhatsApp message — just confirm quantity and delivery date.','seasonal-title':'Festive &amp; seasonal specials','seasonal-desc':'Karanjis and other festival items are available seasonally — message us on WhatsApp for current availability.','gallery-eyebrow':'Gallery','gallery-h2':'Straight from the kitchen','gallery-cap1':'Fresh batch, packed and ready','gallery-cap2':'Puran poli, straight off the tawa','gallery-cap3':'Made fresh, in small batches','reviews-eyebrow':'From Our Customers','reviews-h2':'What families are saying','order-eyebrow':'How to Order','order-h2':'Order for your family, or as a gift','step1':'Browse the menu and pick your items','step2':'Message us on WhatsApp or fill in the form — let us know quantity and date','step3':'Please order at least 2–3 days in advance so everything is made fresh','step4':'We prepare your order by hand and deliver anywhere in Mumbai','delivery-note':'<strong>📍 Delivery:</strong> Anywhere in Mumbai · <strong>🗓️ Lead time:</strong> 2–3 days advance notice · <strong>✅</strong> Daily and festive/seasonal orders both welcome','order-wa-btn':'Message us directly','form-title':'Or send an enquiry','form-note':'This opens WhatsApp with your details filled in, so your message reaches us right away.','form-name':'Your name','form-phone':'Phone number','form-items':"Item(s) you'd like",'form-items-ph':'e.g. 1kg Besan Laddu, 10 Puranpoli','form-date':'Preferred delivery date','form-message':'Anything else?','form-message-ph':'Delivery address, occasion, special requests…','form-submit':'Send enquiry via WhatsApp','footer-tagline':'100% organic, pure ingredients — made with love, delivered to your loved ones.','footer-delivering':'Delivering across Mumbai','footer-copy':'© 2026 Jaymangal Sweets &amp; Snacks','footer-love':'Made with 🧡 for family recipes'},
-hi:{'page-title':'जयमंगल स्वीट्स एंड स्नैक्स — घर का बना, 100% जैविक','nav-about':'हमारी कहानी','nav-menu':'मेनू','nav-gallery':'गैलरी','nav-reviews':'समीक्षाएं','nav-order':'ऑर्डर','header-cta':'व्हाट्सएप पर ऑर्डर करें','hero-eyebrow':'🪔 मुंबई में, प्यार से बना','hero-h1':'मिठाइयाँ और नाश्ता, जैसा<br><span class="accent-underline">आपके परिवार को याद है</span>','hero-sub':'लड्डू, चकली, करंजी, पुरणपोळी और बहुत कुछ — ताज़ा ऑर्डर पर बनाया जाता है, 100% जैविक और शुद्ध सामग्री के साथ।','trust-organic':'100% जैविक सामग्री','trust-fresh':'ऑर्डर पर ताज़ा बना','trust-delivery':'पूरे मुंबई में डिलीवरी','btn-order-wa':'व्हाट्सएप पर ऑर्डर करें','btn-see-menu':'पूरा मेनू और कीमतें देखें','photo-tag':'इस हफ़्ते ताज़ा बना 🌟','about-eyebrow':'हमारी कहानी','about-h2':'एक सपने से शुरू हुई रसोई','story-p1':'हर अच्छी मिठाई उस इंसान से शुरू होती है जो समझौता करने से मना कर देता है — और यही जयमंगल स्वीट्स एंड स्नैक्स की नींव है।','story-p2':'काफ़ी समय तक यह सिर्फ परिवार के लिए था — वो लड्डू जो त्योहार पर एक दिन में ग़ायब हो जाते थे।','story-p3':'हर ऑर्डर आज भी छोटी-छोटी मात्रा में, हाथ से बनाया जाता है।','story-note':'✏️ यह आपकी माँ की कहानी का शुरुआती मसौदा है।','menu-eyebrow':'मेनू और कीमतें','menu-h2':'आज क्या बन रहा है','menu-sub':'नीचे किसी भी आइटम पर "ऑर्डर करें" टैप करें।','seasonal-title':'त्योहार और मौसमी विशेष','seasonal-desc':'करंजी और अन्य त्योहारी आइटम मौसमी रूप से उपलब्ध हैं।','gallery-eyebrow':'गैलरी','gallery-h2':'सीधे रसोई से','gallery-cap1':'ताज़ा बैच, पैक और तैयार','gallery-cap2':'पुरणपोळी, तवे से सीधे','gallery-cap3':'ताज़ा, छोटी मात्रा में बना','reviews-eyebrow':'हमारे ग्राहकों से','reviews-h2':'परिवार क्या कह रहे हैं','order-eyebrow':'ऑर्डर कैसे करें','order-h2':'अपने परिवार के लिए या उपहार के रूप में ऑर्डर करें','step1':'मेनू ब्राउज़ करें और अपने आइटम चुनें','step2':'व्हाट्सएप पर मैसेज करें या फॉर्म भरें','step3':'कृपया कम से कम 2–3 दिन पहले ऑर्डर करें','step4':'हम आपका ऑर्डर हाथ से तैयार करके डिलीवर करते हैं','delivery-note':'<strong>📍 डिलीवरी:</strong> पूरे मुंबई में · <strong>🗓️ समय:</strong> 2–3 दिन पहले नोटिस','order-wa-btn':'सीधे मैसेज करें','form-title':'या पूछताछ भेजें','form-note':'यह आपकी जानकारी भरे हुए व्हाट्सएप खोलता है।','form-name':'आपका नाम','form-phone':'फ़ोन नंबर','form-items':'आप क्या चाहते हैं','form-items-ph':'जैसे: 1 किलो बेसन लड्डू, 10 पुरणपोळी','form-date':'पसंदीदा डिलीवरी तारीख','form-message':'कुछ और?','form-message-ph':'डिलीवरी पता, अवसर, विशेष अनुरोध…','form-submit':'व्हाट्सएप के ज़रिए पूछताछ भेजें','footer-tagline':'100% जैविक, शुद्ध सामग्री — प्यार से बनाई।','footer-delivering':'पूरे मुंबई में डिलीवरी','footer-copy':'© 2026 जयमंगल स्वीट्स एंड स्नैक्स','footer-love':'🧡 पारिवारिक व्यंजनों के लिए बनाया'},
-mr:{'page-title':'जयमंगल स्वीट्स अँड स्नॅक्स — घरगुती, 100% सेंद्रिय','nav-about':'आमची गोष्ट','nav-menu':'मेनू','nav-gallery':'गॅलरी','nav-reviews':'अभिप्राय','nav-order':'ऑर्डर','header-cta':'व्हॉट्सअ‍ॅपवर ऑर्डर करा','hero-eyebrow':'🪔 मुंबईत, प्रेमाने बनवलेले','hero-h1':'मिठाई आणि खाद्यपदार्थ, जसे<br><span class="accent-underline">तुमच्या कुटुंबाला आठवते</span>','hero-sub':'लाडू, चकली, करंजी, पुरणपोळी आणि बरेच काही — ताज्या ऑर्डरवर बनवले, 100% सेंद्रिय घटकांसह.','trust-organic':'100% सेंद्रिय घटक','trust-fresh':'ऑर्डरवर ताजे बनवले','trust-delivery':'संपूर्ण मुंबईत डिलीव्हरी','btn-order-wa':'व्हॉट्सअ‍ॅपवर ऑर्डर करा','btn-see-menu':'संपूर्ण मेनू आणि किंमती पाहा','photo-tag':'या आठवड्यात ताजे बनवलेले 🌟','about-eyebrow':'आमची गोष्ट','about-h2':'एका स्वप्नाने सुरू झालेली स्वयंपाकघर','story-p1':'प्रत्येक चांगली मिठाई त्या माणसापासून सुरू होते जो तडजोड करण्यास नकार देतो.','story-p2':'बराच काळ हे फक्त कुटुंबासाठीच होते.','story-p3':'प्रत्येक ऑर्डर अजूनही हाताने बनवली जाते.','story-note':'✏️ हे तुमच्या आईच्या गोष्टीचे प्राथमिक मसुदे आहे.','menu-eyebrow':'मेनू आणि किंमती','menu-h2':'आज काय बनत आहे','menu-sub':'खालील कोणत्याही वस्तूवर "ऑर्डर करा" टॅप करा.','seasonal-title':'सण आणि हंगामी विशेष','seasonal-desc':'करंजी आणि इतर सणाच्या वस्तू हंगामी उपलब्ध आहेत.','gallery-eyebrow':'गॅलरी','gallery-h2':'थेट स्वयंपाकघरातून','gallery-cap1':'ताज्या बॅच, पॅक आणि तयार','gallery-cap2':'पुरणपोळी, थेट तव्यावरून','gallery-cap3':'ताजे, छोट्या प्रमाणात बनवलेले','reviews-eyebrow':'आमच्या ग्राहकांकडून','reviews-h2':'कुटुंबे काय म्हणतात','order-eyebrow':'ऑर्डर कसे करावे','order-h2':'तुमच्या कुटुंबासाठी किंवा भेट म्हणून ऑर्डर करा','step1':'मेनू पाहा आणि तुमच्या वस्तू निवडा','step2':'व्हॉट्सअ‍ॅपवर संदेश पाठवा किंवा फॉर्म भरा','step3':'कृपया किमान 2–3 दिवस आधी ऑर्डर करा','step4':'आम्ही तुमची ऑर्डर हाताने तयार करून डिलीव्हर करतो','delivery-note':'<strong>📍 डिलीव्हरी:</strong> मुंबईत कुठेही · <strong>🗓️ वेळ:</strong> 2–3 दिवस आधी सूचना','order-wa-btn':'थेट संदेश पाठवा','form-title':'किंवा चौकशी पाठवा','form-note':'हे तुमची माहिती भरलेले व्हॉट्सअ‍ॅप उघडते.','form-name':'तुमचे नाव','form-phone':'फोन नंबर','form-items':'तुम्हाला काय हवे आहे','form-items-ph':'उदा. 1 किलो बेसन लाडू, 10 पुरणपोळी','form-date':'पसंतीची डिलीव्हरी तारीख','form-message':'आणखी काही?','form-message-ph':'डिलीव्हरी पत्ता, प्रसंग, विशेष विनंत्या…','form-submit':'व्हॉट्सअ‍ॅपद्वारे चौकशी पाठवा','footer-tagline':'100% सेंद्रिय, शुद्ध घटक — प्रेमाने बनवलेले.','footer-delivering':'संपूर्ण मुंबईत डिलीव्हरी','footer-copy':'© 2026 जयमंगल स्वीट्स अँड स्नॅक्स','footer-love':'🧡 कौटुंबिक पाककृतींसाठी बनवलेले'}
-};
-function applyLang(lang){const d=T[lang];if(!d)return;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(d[k]!==undefined)el.textContent=d[k]});document.querySelectorAll('[data-i18n-html]').forEach(el=>{const k=el.getAttribute('data-i18n-html');if(d[k]!==undefined)el.innerHTML=d[k]});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{const k=el.getAttribute('data-i18n-placeholder');if(d[k]!==undefined)el.placeholder=d[k]});if(d['page-title'])document.title=d['page-title'];document.documentElement.lang=lang==='en'?'en':lang==='hi'?'hi':'mr';document.body.classList.remove('lang-en','lang-hi','lang-mr');document.body.classList.add('lang-'+lang);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));try{localStorage.setItem('jaymangal_lang',lang)}catch(e){}window.currentLang=lang;window.langDict=d;document.dispatchEvent(new CustomEvent('langchange',{detail:{lang,dict:d}}))}
-document.getElementById('langSwitcher').addEventListener('click',function(e){const b=e.target.closest('.lang-btn');if(b)applyLang(b.dataset.lang)});
-const s=(()=>{try{return localStorage.getItem('jaymangal_lang')}catch(e){return null}})();
-applyLang(s&&T[s]?s:'en');
-})();
-</script>
 </body>
 </html>

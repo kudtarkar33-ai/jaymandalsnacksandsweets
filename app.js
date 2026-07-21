@@ -1,6 +1,7 @@
 // ============ Business config ============
 const WHATSAPP_NUMBER = '919769620994';
 const BUSINESS_NAME = 'जयमंगल Sweets & Snacks';
+const INSTAGRAM_URL = 'https://www.instagram.com/jaymangalsnacksandsweets?igsh=ZnlsNDg4cjZ1ZWJo&utm_source=qr';
 const LANG_KEY = 'jaymangal-lang';
 const SUPPORTED_LANGS = ['en', 'hi', 'mr'];
 
@@ -9,6 +10,9 @@ const I18N = {
   en: {
     nav_about: 'Our Story', nav_menu: 'Menu', nav_gallery: 'Gallery', nav_reviews: 'Reviews', nav_order: 'Order',
     nav_cta: 'Order on WhatsApp',
+    nav_instagram: 'Follow us on Instagram',
+    instagram_qr_title: 'Prefer Instagram?',
+    instagram_qr_body: 'Scan to follow @jaymangalsnacksandsweets — see new items, festive specials, and behind-the-scenes.',
     hero_eyebrow: '🪔 Homemade with love, in Mumbai',
     hero_title1: 'Sweets & snacks made the way',
     hero_title2: 'your family remembers',
@@ -74,6 +78,9 @@ const I18N = {
   hi: {
     nav_about: 'हमारी कहानी', nav_menu: 'मेन्यू', nav_gallery: 'गैलरी', nav_reviews: 'समीक्षाएं', nav_order: 'ऑर्डर करें',
     nav_cta: 'व्हाट्सएप पर ऑर्डर करें',
+    nav_instagram: 'इंस्टाग्राम पर फॉलो करें',
+    instagram_qr_title: 'इंस्टाग्राम पसंद है?',
+    instagram_qr_body: 'स्कैन करें और @jaymangalsnacksandsweets को फॉलो करें — नए आइटम, त्योहारी खास और पीछे की झलकियां देखें।',
     hero_eyebrow: '🪔 मुंबई में प्यार से बना घर का खाना',
     hero_title1: 'मिठाई और नाश्ता, बिल्कुल वैसे ही',
     hero_title2: 'जैसे आपका परिवार याद रखता है',
@@ -139,6 +146,9 @@ const I18N = {
   mr: {
     nav_about: 'आमची गोष्ट', nav_menu: 'मेनू', nav_gallery: 'गॅलरी', nav_reviews: 'अभिप्राय', nav_order: 'ऑर्डर करा',
     nav_cta: 'व्हॉट्सअॅपवर ऑर्डर करा',
+    nav_instagram: 'इंस्टाग्रामवर फॉलो करा',
+    instagram_qr_title: 'इंस्टाग्राम आवडतं?',
+    instagram_qr_body: 'स्कॅन करा आणि @jaymangalsnacksandsweets ला फॉलो करा — नवीन पदार्थ, सणासुदीचे खास आणि मागच्या बाजूची झलक पाहा.',
     hero_eyebrow: '🪔 मुंबईत प्रेमाने बनवलेलं घरगुती खाणं',
     hero_title1: 'गोडधोड आणि खाऊ, अगदी तसाच',
     hero_title2: 'जसा तुमच्या घरचा आठवतो',
@@ -260,6 +270,13 @@ function setDefaultWhatsappLinks() {
   ['headerWhatsapp', 'heroWhatsapp', 'orderWhatsapp'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.href = waLink(msg);
+  });
+}
+
+function setInstagramLinks() {
+  ['headerInstagram', 'orderInstagram', 'footerInstagram', 'mobileInstagram'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = INSTAGRAM_URL;
   });
 }
 
@@ -428,6 +445,7 @@ function setLanguage(lang) {
 
   applyStaticTranslations();
   setDefaultWhatsappLinks();
+  setInstagramLinks();
   renderMenuTabs();
   renderMenuGrid();
   renderReviews();

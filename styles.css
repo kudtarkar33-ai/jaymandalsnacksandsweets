@@ -61,6 +61,11 @@ img { max-width: 100%; display: block; }
 .btn-ghost:hover { background: var(--maroon); color: #fff; }
 .btn-whatsapp { background: #25D366; color: #fff; }
 .btn-whatsapp:hover { background: #1FBE59; transform: translateY(-1px); }
+.btn-instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 45%, #6228d7);
+  color: #fff;
+}
+.btn-instagram:hover { filter: brightness(1.08); transform: translateY(-1px); }
 .full-width { width: 100%; justify-content: center; }
 
 /* ---------- Header ---------- */
@@ -87,6 +92,20 @@ img { max-width: 100%; display: block; }
 .main-nav a:hover { color: var(--maroon); }
 
 .header-cta { padding: 10px 18px; font-size: 0.86rem; white-space: nowrap; }
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 45%, #6228d7);
+  color: #fff;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+.icon-btn:hover { transform: translateY(-1px) scale(1.05); }
 
 /* Language switcher */
 .lang-switch {
@@ -393,6 +412,28 @@ html[lang="hi"] body, html[lang="mr"] body { font-family: 'Noto Sans Devanagari'
   margin-bottom: 24px;
 }
 
+.order-cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+
+.instagram-qr-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--cream-alt);
+  border: 1px dashed var(--card-border);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.instagram-qr-card img {
+  width: 76px;
+  height: 76px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.instagram-qr-title { font-weight: 700; font-size: 0.9rem; margin: 0 0 4px; color: var(--maroon-dark); }
+.instagram-qr-body { font-size: 0.82rem; color: var(--ink-dim); margin: 0; }
+
 .order-form-card {
   background: #fff;
   border: 1px solid var(--card-border);
@@ -434,6 +475,16 @@ html[lang="hi"] body, html[lang="mr"] body { font-family: 'Noto Sans Devanagari'
 .footer-name { font-family: var(--font-display); font-size: 1.2rem; margin: 6px 0 8px; }
 .footer-tagline { color: #D8C4A8; font-size: 0.88rem; max-width: 40ch; }
 .footer-contact p { margin: 4px 0; font-size: 0.9rem; }
+.footer-instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: #F5E9D6;
+  opacity: 0.9;
+}
+.footer-instagram-link:hover { opacity: 1; }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
